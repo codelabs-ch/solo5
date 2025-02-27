@@ -95,7 +95,7 @@ struct hvm_save_descriptor {
 #endif
 
 /*
- * The series of save records is teminated by a zero-type, zero-length
+ * The series of save records is terminated by a zero-type, zero-length
  * descriptor.
  */
 

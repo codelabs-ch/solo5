@@ -78,7 +78,7 @@ int tscclock_init(uint64_t tsc_freq)
      * Calculate TSC shift factor and scaling multiplier.
      *
      * tsc_shift (S) needs to be the largest (<=32) shift factor where the
-     * result of the tsc_mult calculcation below fits into uint32_t without
+     * result of the tsc_mult calculation below fits into uint32_t without
      * truncation. Note that we disallow an S of zero to ensure the loop always
      * terminates.
      *

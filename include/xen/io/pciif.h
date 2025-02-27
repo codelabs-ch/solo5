@@ -85,7 +85,7 @@ struct xen_pci_op {
 
     /* IN/OUT: Contains the result after a READ or the value to WRITE */
     uint32_t value;
-    /* IN: Contains extra infor for this operation */
+    /* IN: Contains extra info for this operation */
     uint32_t info;
     /*IN:  param for msi-x */
     struct xen_msix_entry msix_entries[SH_INFO_MAX_VEC];

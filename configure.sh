@@ -202,7 +202,7 @@ EOM
 
     # [Clang] A LLVM objcopy will understand any LLVM-supported architecture.
     # [GCC] A GNU objcopy will only understand the architecture it was
-    # targetted for.
+    # targeted for.
     echo -n "${prog_NAME}: Checking if ${OBJCOPY} understands ${TARGET_ARCH}: "
     if ! ${OBJCOPY} conftmp.o conftmp.o >/dev/null 2>&1; then
         echo "no"
@@ -294,7 +294,7 @@ CONFIG_SPT_TENDER_NO_PIE=
 CONFIG_SPT_TENDER_LIBSECCOMP_CFLAGS=
 CONFIG_SPT_TENDER_LIBSECCOMP_LDFLAGS=
 if [ -n "${CONFIG_SPT_TENDER}" ]; then
-    # If the host toolchain is NOT configured to build PIE exectuables by
+    # If the host toolchain is NOT configured to build PIE executables by
     # default, assume it has no support for that and apply a workaround by
     # locating the spt tender starting at a virtual address of 1 GB.
     if ! CC=${HOST_CC} cc_has_pie; then
@@ -415,7 +415,7 @@ TARGET_CC_IS_OPENBSD=
 if CC="${TARGET_CC}" cc_is_clang; then
     TARGET_CC_CFLAGS=-nostdlibinc
     # XXX Clang warns for no good reason if -nostdlibinc is used and no
-    # compliation is performed. We could work around this by using --config
+    # compilation is performed. We could work around this by using --config
     # which "claims" all command line arguments as "used", but this is easier
     # for now.
     TARGET_CC_CFLAGS="${TARGET_CC_CFLAGS} -Wno-unused-command-line-argument"

@@ -170,7 +170,7 @@ ENDPROC(cpu_el1_error)
 ENTRY(cpu_exception_vectors)
     /*
      * EL1 Exceptions with SP_EL0. We had configure the SPSel to
-     * select the SP_EL1. So all such excetpions will be treated
+     * select the SP_EL1. So all such exceptions will be treated
      * as invalid.
      */
     EXCEPTION_ENTRY cpu_el1_sync_invalid        // Synchronous EL1t

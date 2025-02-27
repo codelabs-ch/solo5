@@ -57,7 +57,7 @@ void solo5_yield(solo5_time_t deadline, solo5_handle_set_t *ready_set)
          * interrupt taken was not a timer event.
          *
          * Note that on x86, using HLT to wait for an interrupt is only safe
-         * when immediately preceeded by STI and interrupts have been disabled
+         * when immediately preceded by STI and interrupts have been disabled
          * beforehand, otherwise we can take the interrupt before the HLT is
          * executed and go to sleep forever.
          *

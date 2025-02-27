@@ -363,7 +363,7 @@ static void send_packet(char *buffer)
 /*
  * This is a response to 'c' and 's'. In other words, the VM was
  * running and it stopped for some reason. This message is to tell the
- * debugger that whe stopped (and why). The argument code can take these
+ * debugger that we stopped (and why). The argument code can take these
  * and some other values:
  *    - 'S AA' received signal AA
  *    - 'W AA' exited with return code AA

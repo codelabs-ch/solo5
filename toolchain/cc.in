@@ -25,7 +25,7 @@
 # a Solo5 unikernel.
 #
 # Provides a '-z solo5-abi=ABI' option to select the Solo5 bindings to use if
-# linking. ABI defaults to 'stub' to accomodate non-Solo5-aware build systems,
+# linking. ABI defaults to 'stub' to accommodate non-Solo5-aware build systems,
 # such as GNU autoconf, which use 'cc'-as-linker to test for the presence of
 # symbols.
 

@@ -101,7 +101,7 @@ static int virtio_config(struct pci_config_info *pci)
  * order is given by the PCI slot number which is controlled in
  * solo5-virtio-run.sh.
  * 
- * This funtion can fail if the type of a device just found does not match the
+ * This function can fail if the type of a device just found does not match the
  * type of the next expected device in the manifest. Devices whose type (e.g.,
  * virtio_scsi) is unknown is just skipped.
  * 

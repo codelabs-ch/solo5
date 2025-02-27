@@ -488,7 +488,7 @@ DEFINE_XEN_GUEST_HANDLE(xen_sysctl_cputopo_t);
 
 /*
  * IN:
- *  - a NULL 'cputopo' handle is a request for maximun 'num_cpus'.
+ *  - a NULL 'cputopo' handle is a request for maximum 'num_cpus'.
  *  - otherwise it's the number of entries in 'cputopo'
  *
  * OUT:
@@ -656,7 +656,7 @@ struct xen_sysctl_credit2_schedule {
 #define XEN_SYSCTL_SCHEDOP_putinfo 0
 #define XEN_SYSCTL_SCHEDOP_getinfo 1
 struct xen_sysctl_scheduler_op {
-    uint32_t cpupool_id; /* Cpupool whose scheduler is to be targetted. */
+    uint32_t cpupool_id; /* Cpupool whose scheduler is to be targeted. */
     uint32_t sched_id;   /* XEN_SCHEDULER_* (domctl.h) */
     uint32_t cmd;        /* XEN_SYSCTL_SCHEDOP_* */
     union {
@@ -691,7 +691,7 @@ struct xen_sysctl_scheduler_op {
 #define XEN_GCOV_FORMAT_MAGIC    0x58434f56 /* XCOV */
 
 /*
- * Ouput format of LLVM coverage data is just a raw stream, as would be
+ * Output format of LLVM coverage data is just a raw stream, as would be
  * written by the compiler_rt run time library into a .profraw file. There
  * are no special Xen tags or delimiters because none are needed.
  */
@@ -855,13 +855,13 @@ typedef struct livepatch_func livepatch_func_t;
 /*
  * Structure describing an ELF payload. Uniquely identifies the
  * payload. Should be human readable.
- * Recommended length is upto XEN_LIVEPATCH_NAME_SIZE.
+ * Recommended length is up to XEN_LIVEPATCH_NAME_SIZE.
  * Includes the NUL terminator.
  */
 #define XEN_LIVEPATCH_NAME_SIZE 128
 struct xen_livepatch_name {
     XEN_GUEST_HANDLE_64(char) name;         /* IN: pointer to name. */
-    uint16_t size;                          /* IN: size of name. May be upto
+    uint16_t size;                          /* IN: size of name. May be up to
                                                XEN_LIVEPATCH_NAME_SIZE. */
     uint16_t pad[3];                        /* IN: MUST be zero. */
 };
@@ -872,7 +872,7 @@ struct xen_livepatch_name {
  * will be returned. The payload is not applied at this time - that is
  * controlled by XEN_SYSCTL_LIVEPATCH_ACTION.
  *
- * The return value is zero if the payload was succesfully uploaded.
+ * The return value is zero if the payload was successfully uploaded.
  * Otherwise an EXX return value is provided. Duplicate `name` are not
  * supported.
  *
@@ -924,7 +924,7 @@ struct xen_sysctl_livepatch_get {
  * the returned value of data.
  *
  * If the hypercall returns E2BIG the `nr` is too big and should be
- * lowered. The upper limit of `nr` is left to the implemention.
+ * lowered. The upper limit of `nr` is left to the implementation.
  *
  * Note that due to the asynchronous nature of hypercalls the domain might have
  * added or removed the number of payloads making this information stale. It is

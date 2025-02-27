@@ -48,7 +48,7 @@
 /*
  * TODO: To ensure that the VM is correctly destroyed on shutdown (normal or
  * not) we currently install an atexit() handler. The top-level API will need
- * to be changed to accomodate this, e.g. by introducing a hvt_shutdown(),
+ * to be changed to accommodate this, e.g. by introducing a hvt_shutdown(),
  * however this is incompatible with the current "fail fast" approach to
  * internal error handling.
  */

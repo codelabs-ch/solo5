@@ -361,7 +361,7 @@ pvnew(void)
 /** If the supplied ptrvec has any storage allocated, return it to the
  *  heap. The ptrvec itself is not freed. Whereas pvdel() is useful for
  *  entirely heap-based objects (typically obtained from pvnew()),
- *  pvclear() is useful at tne end of functions that use a stack-based
+ *  pvclear() is useful at the end of functions that use a stack-based
  *  ptrvec object. */
 ptrvec *
 pvclear( ptrvec *pv )

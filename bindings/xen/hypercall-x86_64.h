@@ -51,7 +51,7 @@
 #define __XEN_HYPERCALL_X86_64_H__
 
 /*
- * Hypercall primatives for 64bit
+ * Hypercall primitives for 64bit
  *
  * Inputs: %rdi, %rsi, %rdx, %r10, %r8, %r9 (arguments 1-6)
  */

@@ -96,7 +96,7 @@
 #define VIRQ_MCA VIRQ_ARCH_0 /* G. (DOM0) Machine Check Architecture */
 
 /*
- * Machine Check Architecure:
+ * Machine Check Architecture:
  * structs are read-only and used to report all kinds of
  * correctable and uncorrectable errors detected by the HW.
  * Dom0 and DomU: register a handler to get notified.
@@ -197,7 +197,7 @@ struct mcinfo_extended {
 
 /* Below interface used between XEN/DOM0 for passing XEN's recovery action
  * information to DOM0.
- * usage Senario: After offlining broken page, XEN might pass its page offline
+ * usage Scenario: After offlining broken page, XEN might pass its page offline
  * recovery action result to DOM0. DOM0 will save the information in
  * non-volatile memory for further proactive actions, such as offlining the
  * easy broken page earlier when doing next reboot.

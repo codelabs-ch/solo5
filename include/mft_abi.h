@@ -85,7 +85,7 @@ struct mft_entry {
 };
 
 /*
- * Maximum supported number of manifest entires.
+ * Maximum supported number of manifest entries.
  */
 #define MFT_MAX_ENTRIES 64
 

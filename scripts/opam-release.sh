@@ -3,7 +3,7 @@
 # This script is used to generate OPAM metadata for publishing a Solo5 release
 # to ocaml/opam-repository. It should be run from the root of a clean, tagged
 # Solo5 git repository.
-# From Makefile.commmon, the '-Werror' should be removed for the tag of the
+# From Makefile.common, the '-Werror' should be removed for the tag of the
 # release, to avoid failures with future C compilers (which may add new
 # warnings).
 
@@ -24,7 +24,7 @@ fi
 
 WERROR=$(git grep -c ' -Werror' Makefile.common | cut -d ':' -f 2)
 if [ -n "$WERROR" ]; then
-    echo "ERROR: There are occurences of '-Werror' in 'Makefile.common'."
+    echo "ERROR: There are occurrences of '-Werror' in 'Makefile.common'."
     echo "ERROR: This is almost certainly not what you want."
     exit 1
 fi

@@ -35,7 +35,7 @@ int solo5_app_main(const struct solo5_start_info *si __attribute__((unused)))
 {
     puts("\n**** Solo5 standalone test_rnox ****\n\n");
 
-    /* Verify that read only data (in section .rodata) is not executeable. */
+    /* Verify that read only data (in section .rodata) is not executable. */
     nothing();
 
     puts("FAILURE\n");

@@ -1062,7 +1062,7 @@ struct xen_domctl_monitor_op {
             uint8_t sync;
             /* Send event only on a change of value */
             uint8_t onchangeonly;
-            /* Allignment padding */
+            /* Alignment padding */
             uint8_t pad1;
             uint32_t pad2;
             /*

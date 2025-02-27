@@ -20,7 +20,7 @@
 
 #include "bindings.h"
 
-/* _stdata is the address begining of the "not bss" thread variables block */
+/* _stdata is the address beginning of the "not bss" thread variables block */
 extern char _stdata[];
 #define TDATA ((void*)_stdata)
 

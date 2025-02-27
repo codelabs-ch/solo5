@@ -44,7 +44,7 @@ int mft_validate(const struct mft *mft, size_t mft_size)
         return -1;
     /*
      * mft_size must be the exact expected structure size, including the space
-     * required for manifest entires.
+     * required for manifest entries.
      *
      * If you are debugging this and it does not match up, the most likely
      * cause is an internal structure alignment issue (see mft_abi.h).

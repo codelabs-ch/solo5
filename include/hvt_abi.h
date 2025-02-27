@@ -137,7 +137,7 @@ static inline void hvt_do_hypercall(int n, volatile void *arg)
  * desired guest-side pointer type. hvt_gpa_t (defined earlier) will be used
  * as the tender-side type.
  *
- * This ensures that these pointers are not directly dereferencable on the
+ * This ensures that these pointers are not directly dereferenceable on the
  * tender side.
  */
 #ifdef HVT_HOST

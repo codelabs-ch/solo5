@@ -33,7 +33,7 @@
  * sanitize all fields with prejudice, as these are considered untrusted data.
  *
  * Note that (mft_size) must be the **exact** expected size of the expected
- * manifest structure, including the array of entires.
+ * manifest structure, including the array of entries.
  *
  * On success returns 0, on error returns -1.
  */

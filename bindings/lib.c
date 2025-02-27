@@ -52,7 +52,7 @@
  * When adding functions to this file ensure that they are entirely
  * self-contained, or, even better, work on the TODO below instead.
  *
- * TODO: Replace this with a proper intergration of nolibc into both the
+ * TODO: Replace this with a proper integration of nolibc into both the
  * kernel and tests.
  */
 #ifdef __SOLO5_BINDINGS__

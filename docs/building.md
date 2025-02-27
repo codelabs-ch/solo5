@@ -132,10 +132,10 @@ Solo5: solo5_exit(0) called
 
 # Running Solo5-based unikernels
 
-Solo5 itself does not provide a high-level mangement or orchestration layer for
-unikernels -- this is intended to be provided by separate downstream projects.
-If you are coming from Linux containers you can think of Solo5 as conceptually
-occupying the same space in the stack as, for example, `runc`.
+Solo5 itself does not provide a high-level manegement or orchestration layer
+for unikernels -- this is intended to be provided by separate downstream
+projects.  If you are coming from Linux containers you can think of Solo5 as
+conceptually occupying the same space in the stack as, for example, `runc`.
 
 If you are looking for a high-level stack for deploying unikernels, one such
 project is [Albatross](https://github.com/hannesm/albatross).

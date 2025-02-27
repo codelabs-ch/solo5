@@ -94,7 +94,7 @@
  * All data in XenStore is stored as strings. Nodes specifying numeric
  * values are encoded in decimal. Integer value ranges listed below are
  * expressed as fixed sized integer types capable of storing the conversion
- * of a properly formated node string, without loss of information.
+ * of a properly formatted node string, without loss of information.
  *
  ******************************************************************************
  *                        Example configuration
@@ -167,7 +167,7 @@
  * conn-idx
  *      Values:         <uint8_t>
  *
- *      Zero based contigous index of the connector.
+ *      Zero based contiguous index of the connector.
  *      /local/domain/<dom-id>/device/vdispl/<dev-id>/<conn-idx>/...
  *
  *----------------------------- Protocol version ------------------------------

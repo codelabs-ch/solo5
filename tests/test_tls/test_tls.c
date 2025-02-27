@@ -30,7 +30,7 @@ static void puts(const char *s)
 }
 
 /* This just stub a libc malloc setup with a limited 64k heap.
- * This does not guard heap overwritting on stack, it's just a testfile.
+ * This does not guard heap overwriting on stack, it's just a testfile.
  */
 #define heap_size 65536
 static uint8_t heap[heap_size];

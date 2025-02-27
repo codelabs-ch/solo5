@@ -267,7 +267,7 @@ static void aarch64_setup_core_registers(struct hvt *hvt,
          err(1, "Initialize spsr[EL1] failed!\n");
 
     /*
-     * Set Stack Poniter for Guest. ARM64 require stack be 16-bytes
+     * Set Stack Pointer for Guest. ARM64 require stack be 16-bytes
      * alignment by default.
      */
     ret = aarch64_set_one_register(hvb->vcpufd, SP_EL1,
