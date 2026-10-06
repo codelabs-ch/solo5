@@ -205,7 +205,8 @@ static bool muen_net_dev_init(const char *name, struct muen_net_device *device,
         (unsigned long long)chan_out->data.mem.size, (unsigned long long)epoch);
 
     device->net_in = (struct muchannel *)(chan_in->data.mem.address);
-    muen_channel_init_reader(&device->net_rdr, MUENNET_PROTO);
+    muen_channel_init_reader(&device->net_rdr, MUENNET_PROTO,
+                             sizeof(struct net_msg), chan_in->data.mem.size);
     log(INFO, "Solo5: Net: '%s': Input  channel @ 0x%llx, size 0x%llx\n", name,
         (unsigned long long)chan_in->data.mem.address,
         (unsigned long long)chan_in->data.mem.size);
